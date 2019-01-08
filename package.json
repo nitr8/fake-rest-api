@@ -19,6 +19,9 @@
     "generate-mock-api-data": "ts-node buildScripts/generateData.ts",
     "prestart": "npm run generate-mock-api-data",
     "start": "json-server --watch buildScripts/db.json --port 3000",
-    "proxy":"node server.js"
+    "proxy": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
   }
 }
